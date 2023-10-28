@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import math
 import numpy as np
 
-from disent.frameworks.helper.autoencoder_helpers import list_of_distances
+from BaseVAEs.models.disent.frameworks.helper.autoencoder_helpers import list_of_distances
 
 
 class VectorQuantizationLayer(nn.Module):

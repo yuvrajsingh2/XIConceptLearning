@@ -29,8 +29,8 @@ Representations" (https://openreview.net/forum?id=By-7dz-AZ).
 import logging
 from tqdm import tqdm
 
-from disent.dataset.groundtruth import GroundTruthDataset
-from disent.metrics import utils
+from BaseVAEs.models.disent.dataset.groundtruth import GroundTruthDataset
+from BaseVAEs.models.disent.metrics import utils
 import numpy as np
 import scipy
 import scipy.stats

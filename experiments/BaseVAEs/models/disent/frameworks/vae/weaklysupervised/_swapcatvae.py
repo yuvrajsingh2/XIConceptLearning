@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from torch.distributions import Distribution
 from torch.nn import functional as F
 
-from disent.frameworks.vae.unsupervised import CatVae
+from BaseVAEs.models.disent.frameworks.vae.unsupervised import CatVae
 
 
 # ========================================================================= #
@@ -268,7 +268,7 @@ def compute_average_ml_vae(z0_mean, z0_logvar, z1_mean, z1_logvar):
 # ========================================================================= #
 
 from torch.optim import Adam
-from disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
+from BaseVAEs.models.disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
 
 if __name__ == '__main__':
     n_categories = 4

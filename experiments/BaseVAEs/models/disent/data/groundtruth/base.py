@@ -4,8 +4,8 @@ from abc import ABCMeta
 from typing import List, Tuple
 import h5py
 
-from disent.data.util.in_out import basename_from_url, download_file, ensure_dir_exists
-from disent.data.util.state_space import StateSpace
+from BaseVAEs.models.disent.data.util.in_out import basename_from_url, download_file, ensure_dir_exists
+from BaseVAEs.models.disent.data.util.state_space import StateSpace
 
 
 log = logging.getLogger(__name__)

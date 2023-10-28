@@ -3,8 +3,8 @@ from typing import Tuple, Optional
 import numpy as np
 from torch.utils.data import Dataset
 from torch.utils.data.dataloader import default_collate
-from disent.data.groundtruth.base import GroundTruthData
-from disent.dataset._augment_util import AugmentableDataset
+from BaseVAEs.models.disent.data.groundtruth.base import GroundTruthData
+from BaseVAEs.models.disent.dataset._augment_util import AugmentableDataset
 
 
 log = logging.getLogger(__name__)

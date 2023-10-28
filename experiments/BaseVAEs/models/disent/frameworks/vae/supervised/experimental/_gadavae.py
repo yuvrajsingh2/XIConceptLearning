@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 import torch
-from disent.frameworks.vae.weaklysupervised import AdaVae
+from BaseVAEs.models.disent.frameworks.vae.weaklysupervised import AdaVae
 
 
 # ========================================================================= #

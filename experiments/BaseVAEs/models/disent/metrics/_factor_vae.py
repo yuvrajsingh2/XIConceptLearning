@@ -28,10 +28,10 @@ Based on "Disentangling by Factorising" (https://arxiv.org/abs/1802.05983).
 import logging
 from tqdm import tqdm
 
-from disent.dataset.groundtruth import GroundTruthDataset
-from disent.metrics import utils
+from BaseVAEs.models.disent.dataset.groundtruth import GroundTruthDataset
+from BaseVAEs.models.disent.metrics import utils
 import numpy as np
-from disent.util import to_numpy
+from BaseVAEs.models.disent.util import to_numpy
 
 
 log = logging.getLogger(__name__)

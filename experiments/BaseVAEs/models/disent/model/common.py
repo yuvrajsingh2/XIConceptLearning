@@ -1,5 +1,5 @@
 import logging
-from disent.util import DisentModule
+from BaseVAEs.models.disent.util import DisentModule
 
 
 log = logging.getLogger(__name__)

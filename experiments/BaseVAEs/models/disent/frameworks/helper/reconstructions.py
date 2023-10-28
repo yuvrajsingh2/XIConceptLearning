@@ -2,7 +2,7 @@ from typing import final
 
 import torch
 import torch.nn.functional as F
-from disent.frameworks.helper.reductions import loss_reduction
+from BaseVAEs.models.disent.frameworks.helper.reductions import loss_reduction
 
 
 # ========================================================================= #

@@ -1,7 +1,7 @@
 import logging
 import numpy as np
-from disent.data.groundtruth.base import GroundTruthData
-from disent.dataset.groundtruth import GroundTruthDataset
+from BaseVAEs.models.disent.data.groundtruth.base import GroundTruthData
+from BaseVAEs.models.disent.dataset.groundtruth import GroundTruthDataset
 
 
 log = logging.getLogger(__name__)

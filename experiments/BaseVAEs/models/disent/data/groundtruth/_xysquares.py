@@ -1,8 +1,8 @@
 import logging
 from typing import Tuple
-from disent.data.groundtruth.base import GroundTruthData
+from BaseVAEs.models.disent.data.groundtruth.base import GroundTruthData
 import numpy as np
-from disent.util import chunked
+from BaseVAEs.models.disent.util import chunked
 
 log = logging.getLogger(__name__)
 

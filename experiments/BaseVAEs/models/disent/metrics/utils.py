@@ -27,8 +27,8 @@ import numpy as np
 import sklearn
 from tqdm import tqdm
 
-from disent.dataset.groundtruth import GroundTruthDataset
-from disent.util import to_numpy
+from BaseVAEs.models.disent.dataset.groundtruth import GroundTruthDataset
+from BaseVAEs.models.disent.util import to_numpy
 
 
 # ========================================================================= #

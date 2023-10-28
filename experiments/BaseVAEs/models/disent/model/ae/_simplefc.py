@@ -1,7 +1,7 @@
 from torch import nn as nn, Tensor
 
-from disent.model.base import BaseEncoderModule, BaseDecoderModule
-from disent.model.common import Flatten3D, BatchView
+from BaseVAEs.models.disent.model.base import BaseEncoderModule, BaseDecoderModule
+from BaseVAEs.models.disent.model.common import Flatten3D, BatchView
 
 
 # ========================================================================= #

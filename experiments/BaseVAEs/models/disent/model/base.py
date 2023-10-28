@@ -3,7 +3,7 @@ from typing import final
 import logging
 import numpy as np
 
-from disent.util import DisentModule
+from BaseVAEs.models.disent.util import DisentModule
 
 
 log = logging.getLogger(__name__)

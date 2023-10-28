@@ -1,7 +1,7 @@
 import numpy as np
-from disent.dataset.groundtruth._single import GroundTruthDataset
-from disent.data.groundtruth.base import GroundTruthData
-from disent.dataset.groundtruth._triplet import sample_radius, normalise_range_pair, FactorSizeError
+from BaseVAEs.models.disent.dataset.groundtruth._single import GroundTruthDataset
+from BaseVAEs.models.disent.data.groundtruth.base import GroundTruthData
+from BaseVAEs.models.disent.dataset.groundtruth._triplet import sample_radius, normalise_range_pair, FactorSizeError
 
 
 # ========================================================================= #

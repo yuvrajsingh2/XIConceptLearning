@@ -29,7 +29,7 @@ Observations" (https://openreview.net/forum?id=H1kG7GZAW), Section 3.
 import logging
 import numpy as np
 from sklearn import svm
-from disent.metrics import utils
+from BaseVAEs.models.disent.metrics import utils
 
 
 log = logging.getLogger(__name__)

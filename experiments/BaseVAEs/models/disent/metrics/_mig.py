@@ -28,7 +28,7 @@ Based on "Isolating Sources of Disentanglement in Variational Autoencoders"
 
 import logging
 import numpy as np
-from disent.metrics import utils
+from BaseVAEs.models.disent.metrics import utils
 
 
 log = logging.getLogger(__name__)

@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 import torch
 import numpy as np
-from disent.frameworks.vae.supervised._tvae import TripletVae
-from disent.frameworks.helper.triplet_loss import configured_triplet, configured_dist_triplet
-from disent.frameworks.vae.weaklysupervised._adavae import AdaVae
+from BaseVAEs.models.disent.frameworks.vae.supervised._tvae import TripletVae
+from BaseVAEs.models.disent.frameworks.helper.triplet_loss import configured_triplet, configured_dist_triplet
+from BaseVAEs.models.disent.frameworks.vae.weaklysupervised._adavae import AdaVae
 import logging
 
 

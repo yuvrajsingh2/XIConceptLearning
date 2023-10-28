@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
-import models.modules as modules
-from models.torch_truncnorm.TruncatedNormal import TruncatedNormal
+import ProtoLearning.models.modules as modules
+from ProtoLearning.models.torch_truncnorm.TruncatedNormal import TruncatedNormal
 
 
 class iCSN(nn.Module):

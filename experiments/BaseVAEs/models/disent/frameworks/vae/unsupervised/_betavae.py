@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import torch
 
-from disent.frameworks.vae.unsupervised import Vae
+from BaseVAEs.models.disent.frameworks.vae.unsupervised import Vae
 
 
 # ========================================================================= #

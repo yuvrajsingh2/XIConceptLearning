@@ -6,8 +6,8 @@ import numpy as np
 from torch.nn import functional as F
 from torch.distributions import Normal, Distribution, Categorical
 
-from disent.frameworks.helper.reductions import loss_reduction
-from disent.util import TupleDataClass
+from BaseVAEs.models.disent.frameworks.helper.reductions import loss_reduction
+from BaseVAEs.models.disent.util import TupleDataClass
 
 
 # ========================================================================= #

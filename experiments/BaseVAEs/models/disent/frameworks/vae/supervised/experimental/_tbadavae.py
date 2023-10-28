@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from disent.frameworks.vae.supervised import BoundedAdaVae, TripletVae
-from disent.frameworks.helper.triplet_loss import TripletLossConfig
+from BaseVAEs.models.disent.frameworks.vae.supervised import BoundedAdaVae, TripletVae
+from BaseVAEs.models.disent.frameworks.helper.triplet_loss import TripletLossConfig
 
 
 # ========================================================================= #

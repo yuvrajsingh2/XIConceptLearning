@@ -1,8 +1,8 @@
 import os
 from typing import List, Tuple
 import numpy as np
-from disent.data.episodes._base import BaseOptionEpisodesData
-from disent.data.util.in_out import download_file, basename_from_url
+from BaseVAEs.models.disent.data.episodes._base import BaseOptionEpisodesData
+from BaseVAEs.models.disent.data.util.in_out import download_file, basename_from_url
 import logging
 
 log = logging.getLogger(__file__)

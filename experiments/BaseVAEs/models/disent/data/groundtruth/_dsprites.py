@@ -1,4 +1,4 @@
-from disent.data.groundtruth.base import Hdf5PreprocessedGroundTruthData
+from BaseVAEs.models.disent.data.groundtruth.base import Hdf5PreprocessedGroundTruthData
 
 
 # ========================================================================= #

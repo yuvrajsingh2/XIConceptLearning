@@ -3,9 +3,9 @@ from typing import final
 
 import torch
 
-from disent.frameworks.helper.reconstructions import ReconstructionLoss, make_reconstruction_loss
-from disent.model.ae.base import AutoEncoder
-from disent.frameworks.framework import BaseFramework
+from BaseVAEs.models.disent.frameworks.helper.reconstructions import ReconstructionLoss, make_reconstruction_loss
+from BaseVAEs.models.disent.model.ae.base import AutoEncoder
+from BaseVAEs.models.disent.frameworks.framework import BaseFramework
 
 
 # ========================================================================= #

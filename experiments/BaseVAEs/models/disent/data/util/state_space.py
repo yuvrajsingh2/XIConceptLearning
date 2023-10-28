@@ -1,5 +1,5 @@
 import numpy as np
-from disent.util import LengthIter
+from BaseVAEs.models.disent.util import LengthIter
 
 
 # ========================================================================= #

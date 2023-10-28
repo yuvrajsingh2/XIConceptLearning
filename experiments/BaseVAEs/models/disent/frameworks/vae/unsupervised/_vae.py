@@ -4,8 +4,8 @@ from typing import Tuple, final
 import torch
 from torch.distributions import Distribution
 
-from disent.frameworks.ae.unsupervised import AE
-from disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
+from BaseVAEs.models.disent.frameworks.ae.unsupervised import AE
+from BaseVAEs.models.disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
 
 
 # ========================================================================= #

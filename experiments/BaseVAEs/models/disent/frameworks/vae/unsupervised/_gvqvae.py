@@ -5,9 +5,9 @@ import numpy as np
 import torch
 from torch.distributions import Distribution
 
-import disent.frameworks.helper.proto_modules as proto_modules
-from disent.frameworks.ae.unsupervised import AE
-from disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
+import BaseVAEs.models.disent.frameworks.helper.proto_modules as proto_modules
+from BaseVAEs.models.disent.frameworks.ae.unsupervised import AE
+from BaseVAEs.models.disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
 
 
 # ========================================================================= #

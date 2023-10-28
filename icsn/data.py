@@ -67,6 +67,7 @@ class ECR_PairswithTest(Dataset):
         self.test_data = (self.test_data - self.test_data.min()) / (self.test_data.max() - self.test_data.min())
 
         with open(self.train_labels_path, 'rb') as f:
+            print(f"Loading {self.train_labels_path}")
             labels_dict = pickle.load(f)
             self.train_labels = labels_dict['labels_one_hot']
             self.train_labels_as_id = labels_dict['labels']
@@ -75,6 +76,7 @@ class ECR_PairswithTest(Dataset):
             except:
                 self.shared_labels = None
         with open(self.test_labels_path, 'rb') as f:
+            print(f"Loading 2 {self.test_labels_path}")
             labels_dict = pickle.load(f)
             self.test_labels = labels_dict['labels_one_hot']
 

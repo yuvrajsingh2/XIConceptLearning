@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-
-import models.modules as modules
+import sys, os
+import ProtoLearning.models.modules as modules
 
 
 class AE(nn.Module):

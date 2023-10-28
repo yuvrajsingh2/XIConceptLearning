@@ -4,8 +4,8 @@ from typing import Tuple, final
 import torch
 from torch.distributions import Distribution
 
-from disent.frameworks.ae.unsupervised import AE
-from disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
+from BaseVAEs.models.disent.frameworks.ae.unsupervised import AE
+from BaseVAEs.models.disent.frameworks.helper.latent_distributions import make_latent_distribution, LatentDistribution
 
 
 # ========================================================================= #
@@ -143,7 +143,7 @@ class CatVae(AE):
 # END                                                                       #
 # ========================================================================= #
 from torch.optim import Adam
-from disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
+from BaseVAEs.models.disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
 
 if __name__ == '__main__':
     n_categories = 4

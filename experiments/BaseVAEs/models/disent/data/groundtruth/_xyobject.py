@@ -1,5 +1,5 @@
 from typing import Tuple
-from disent.data.groundtruth.base import GroundTruthData
+from BaseVAEs.models.disent.data.groundtruth.base import GroundTruthData
 import numpy as np
 
 

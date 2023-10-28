@@ -1,6 +1,6 @@
 import torch
 from torch import Tensor
-from disent.model.base import BaseDecoderModule, BaseEncoderModule, BaseModule
+from BaseVAEs.models.disent.model.base import BaseDecoderModule, BaseEncoderModule, BaseModule
 
 
 # ========================================================================= #

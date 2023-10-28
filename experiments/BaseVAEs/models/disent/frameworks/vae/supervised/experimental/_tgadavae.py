@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from disent.frameworks.vae.supervised import GuidedAdaVae
-from disent.frameworks.vae.supervised._tvae import TripletVae
-from disent.frameworks.helper.triplet_loss import TripletLossConfig
+from BaseVAEs.models.disent.frameworks.vae.supervised import GuidedAdaVae
+from BaseVAEs.models.disent.frameworks.vae.supervised._tvae import TripletVae
+from BaseVAEs.models.disent.frameworks.helper.triplet_loss import TripletLossConfig
 
 
 # ========================================================================= #

@@ -1,8 +1,8 @@
 from typing import List, Tuple
 import numpy as np
 
-from disent.dataset.groundtruth._triplet import sample_radius
-from disent.util import LengthIter
+from BaseVAEs.models.disent.dataset.groundtruth._triplet import sample_radius
+from BaseVAEs.models.disent.util import LengthIter
 
 
 class BaseOptionEpisodesData(LengthIter):

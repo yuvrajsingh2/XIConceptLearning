@@ -4,17 +4,19 @@ import numpy as np
 import time
 import matplotlib
 
+
 matplotlib.use('Agg')
 import sys
 import os
+# print(os.getcwd())
 from torch.utils.tensorboard import SummaryWriter
 from rtpt.rtpt import RTPT
 from torch.nn.parameter import Parameter
 
-import experiments.ProtoLearning.utils as utils
-import experiments.ProtoLearning.data as data
-from experiments.ProtoLearning.models.icsn import iCSN
-from experiments.ProtoLearning.args import parse_args_as_dict
+import utils as utils
+import data as data
+from models.icsn import iCSN
+from args import parse_args_as_dict
 
 
 def train(model, data_loader, log_samples, optimizer, scheduler, writer, cur_epoch, config):
@@ -206,11 +208,23 @@ def main(config):
         # scheduler = lr_scheduler.CyclicLR(optimizer, base_lr=0.00001, max_lr=0.0004, step_size_up=100)
     if not config['test']:
         # start training
+        # Confirm that dataloader is providing correct data
+        #for i, (imgs, labels_one_hot, labels_id, shared_labels) in enumerate(_data_loader):
+            # imgs is a list
+         #   print(f"imgs[0].shape {imgs[0].shape}")
+          #  print(f"labels_one_hot[0].shape {labels_one_hot[0].shape}")
+           # print(f"labels_id[0].shape {labels_id[0].shape}")
+            #print(f"shared_labels[0].shape {shared_labels[0].shape}")
+            #break
+        
+        
         train(_model, _data_loader, test_set, optimizer, scheduler, writer, cur_epoch, config)
     else:
         test(_model, test_set, writer, config)
 
 if __name__ == '__main__':
+    # print cwd
+    # print(os.getcwd())
     # get config
     config = parse_args_as_dict(sys.argv[1:])
 

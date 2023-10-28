@@ -1,5 +1,5 @@
 import torch
-import disent.transform.functional as F_d
+import BaseVAEs.models.disent.transform.functional as F_d
 
 
 class Noop(object):

@@ -1,0 +1,4 @@
+python .\experiments\ProtoLearning\train_icsn.py --initials YS --n_workers 0
+python .\experiments\ProtoLearning\train_icsn.py --initials YS --dataset dsprites -dd Data
+tried before
+& C:/Users/yuviu/anaconda3/envs/proto-learning/python.exe "c:/Users/yuviu/Desktop/Uni Work/Thesis/XIConceptLearning/experiments/ProtoLearning/train_icsn.py" --initials ys --dataset ecr --data-dir ..\..\Data\ECR

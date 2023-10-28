@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from torch.distributions import Distribution
 
-from disent.frameworks.vae.unsupervised import BetaVae
+from BaseVAEs.models.disent.frameworks.vae.unsupervised import BetaVae
 
 
 # ========================================================================= #
@@ -242,7 +242,7 @@ def compute_average_ml_vae(z0_mean, z0_logvar, z1_mean, z1_logvar):
 # ========================================================================= #
 
 from torch.optim import Adam
-from disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
+from BaseVAEs.models.disent.model.ae import EncoderConv64, DecoderConv64, AutoEncoder
 
 if __name__ == '__main__':
     net = AdaVae(make_optimizer_fn=lambda params: Adam(params, lr=1e-3),

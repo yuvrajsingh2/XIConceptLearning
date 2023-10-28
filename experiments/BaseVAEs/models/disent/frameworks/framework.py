@@ -2,7 +2,7 @@ from typing import final
 
 import torch
 from dataclasses import dataclass
-from disent.util import DisentLightningModule, DisentConfigurable
+from BaseVAEs.models.disent.util import DisentLightningModule, DisentConfigurable
 
 
 # ========================================================================= #

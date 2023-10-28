@@ -10,8 +10,8 @@ from typing import Iterable, Union, Dict
 import torch
 import numpy as np
 
-from disent.dataset.groundtruth import GroundTruthDataset
-from disent.util import chunked, to_numpy, colors
+from BaseVAEs.models.disent.dataset.groundtruth import GroundTruthDataset
+from BaseVAEs.models.disent.util import chunked, to_numpy, colors
 
 log = logging.getLogger(__name__)
 

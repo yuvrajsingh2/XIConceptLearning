@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from torch.distributions import Distribution
 
-from disent.frameworks.vae.unsupervised import BetaVae
+from BaseVAEs.models.disent.frameworks.vae.unsupervised import BetaVae
 
 
 # ========================================================================= #

@@ -5,7 +5,7 @@ import kornia
 import torch
 import torchvision
 
-from disent.frameworks.vae.supervised._tvae import TripletVae
+from BaseVAEs.models.disent.frameworks.vae.supervised._tvae import TripletVae
 
 
 log = logging.getLogger(__name__)

@@ -16,7 +16,7 @@ def _get_parser():
 
     # parser.add_argument('--learn', type=str, required=True, help='unsup, weakly or sup')
 
-    parser.add_argument('--save-step', type=int, default=50, help='save model every # steps')
+    parser.add_argument('--save-step', type=int, default=25, help='save model every # steps')
     parser.add_argument('--print-step', type=int, default=10, help='print metrics every # steps')
     parser.add_argument('--display-step', type=int, default=1,
                         help='track metrics and iamges on tensorboard every # steps')
@@ -37,12 +37,12 @@ def _get_parser():
     parser.add_argument('-bs', '--batch-size', type=int, default=500, help='batch size, for paired training this is '
                                                                            'the batch size of pairs, so in the end you '
                                                                            'have 2xbs')
-    parser.add_argument('-e', '--epochs', type=int, default=500, help='batch size')
-    parser.add_argument('--n-workers', type=int, default=2, help='workers to load data')
+    parser.add_argument('-e', '--epochs', type=int, default=500, help='Number of epochs to train for')
+    parser.add_argument('--n-workers', type=int, default=0, help='workers to load data')
 
-    parser.add_argument('-pv', '--prototype-vectors', type=int , nargs='+', default=[2, 3],
+    parser.add_argument('-pv', '--prototype-vectors', type=int , nargs='+', default=[6, 6, 6],
                         help='List of number of prototype vectors per category [#p1, #p2, ...]')
-    parser.add_argument('--n-protos', type=int, default=2,
+    parser.add_argument('--n-protos', type=int, default=3,
                         help='number of classes per categorical variable, i.e. number of prototypes per group')
     parser.add_argument('--proto-dim', type=int, default=32, help='dimensions of each prototype')
     parser.add_argument('--extra-mlp-dim', type=int, default=4, help='dimensions of extra mlp')
@@ -55,14 +55,14 @@ def _get_parser():
     parser.add_argument('--exp-name', type=str, default='', help='experiment name')
     parser.add_argument('--results-dir', type=str, default='results', help='results directory')
     parser.add_argument('--model-dir', type=str, default='states', help='model directory')
-    parser.add_argument('--img-dir', type=str, default='imgs', help='image\plot directory')
+    parser.add_argument('--img-dir', type=str, default='imgs', help='image/plot directory')
     parser.add_argument('-dd', '--data-dir', type=str, default='Data', help='data directory')
 
     parser.add_argument('-s', '--seed', type=int, default=42, help='seed')
 
     parser.add_argument('-d', '--dataset', type=str, default='toycolor',
                         help="'toycolor' or 'mnist' or 'toycolorshape' or 'toyshapesize' or 'toycolorshapesize'")
-    parser.add_argument('--initials', type=str, required=True,
+    parser.add_argument('--initials', type=str, default='YS', required=False,
                         help="Your initials")
     parser.add_argument('--fpath-load-pretrained', type=str, default=None,
                         help='specify the fpath to the pretrained model')

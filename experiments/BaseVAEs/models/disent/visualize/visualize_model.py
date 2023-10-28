@@ -27,9 +27,10 @@ Visualization module for disentangled representations.
 import logging
 import numbers
 
-from disent.visualize import visualize_util
-from disent.visualize.visualize_util import reconstructions_to_images, make_animation_grid
-from disent.util import to_numpy
+
+from BaseVAEs.models.disent.visualize import visualize_util
+from BaseVAEs.models.disent.visualize.visualize_util import reconstructions_to_images, make_animation_grid
+from BaseVAEs.models.disent.util import to_numpy
 import numpy as np
 import torch
 

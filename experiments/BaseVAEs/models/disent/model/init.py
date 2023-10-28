@@ -1,5 +1,5 @@
 from torch import nn
-from disent.util import colors as c
+from BaseVAEs.models.disent.util import colors as c
 import logging
 
 log = logging.getLogger(__name__)

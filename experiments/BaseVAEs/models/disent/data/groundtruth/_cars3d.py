@@ -3,7 +3,7 @@ import os
 import shutil
 import numpy as np
 from scipy.io import loadmat
-from disent.data.groundtruth.base import DownloadableGroundTruthData
+from BaseVAEs.models.disent.data.groundtruth.base import DownloadableGroundTruthData
 
 log = logging.getLogger(__name__)
 

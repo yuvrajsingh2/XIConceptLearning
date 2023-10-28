@@ -4,7 +4,7 @@ import torch
 import json
 import datetime
 import numpy as np
-from utils import set_seed, makedirs
+from BaseVAEs.utils import set_seed, makedirs
 
 
 # parse train options

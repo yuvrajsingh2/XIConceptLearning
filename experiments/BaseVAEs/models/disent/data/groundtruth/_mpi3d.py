@@ -1,6 +1,6 @@
 import logging
 import numpy as np
-from disent.data.groundtruth.base import DownloadableGroundTruthData
+from BaseVAEs.models.disent.data.groundtruth.base import DownloadableGroundTruthData
 
 log = logging.getLogger(__name__)
 

@@ -6,7 +6,7 @@ import warnings
 import numpy as np
 from PIL import Image
 import scipy.stats
-from disent.util import to_numpy
+from BaseVAEs.models.disent.util import to_numpy
 
 
 log = logging.getLogger(__name__)

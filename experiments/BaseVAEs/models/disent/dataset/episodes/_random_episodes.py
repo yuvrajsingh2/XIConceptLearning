@@ -1,8 +1,8 @@
 import numpy as np
 from torch.utils.data import Dataset
-from disent.data.episodes import BaseOptionEpisodesData
-from disent.dataset._augment_util import AugmentableDataset
-from disent.util import LengthIter
+from BaseVAEs.models.disent.data.episodes import BaseOptionEpisodesData
+from BaseVAEs.models.disent.dataset._augment_util import AugmentableDataset
+from BaseVAEs.models.disent.util import LengthIter
 
 
 class RandomEpisodeDataset(Dataset, LengthIter, AugmentableDataset):
